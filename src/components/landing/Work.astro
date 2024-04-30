@@ -1,8 +1,7 @@
 ---
 import {designwork} from "../../data/designwork.json";
 ---
-<section class="scroll-mt-24" id="work">
-
+<section class="scroll-mt-14" id="work">
 
     <div class="px-8 md:px-12 py-24 max-w-2xl mx-auto">
         <div class="p-8 bg-black rounded-3xl">
@@ -11,7 +10,7 @@ import {designwork} from "../../data/designwork.json";
             </div>
         </div>
 
-        <div class=" py-5 max-w-2xl mx-auto">
+        <div class="max-w-2xl mx-auto">
 
             <div x-data="{selected:null}">
                 <ul
@@ -51,24 +50,22 @@ import {designwork} from "../../data/designwork.json";
                                 x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''"
                                 x-ref="container1"
                         >
-                            <div class="text-sm text-zinc-500 p-8 pt-0">
+                            <div class="text-sm text-zinc-500 p-4 pt-0">
                                 <div class="items-center justify-center w-full flex flex-col shrink-0 snap-start"
                                      role="option" x-bind="disableNextAndPreviousButtons">
                                     <img src="/fideos.png" alt=""
-                                         style="border-top-left-radius: 8px; border-top-right-radius: 8px; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;"/>
+                                         style="border-top-left-radius: 18px; border-top-right-radius: 18px; border-bottom-left-radius: 18px; border-bottom-right-radius: 18px;"/>
                                 </div>
                                 <br>
 
-                                <table class="w-full border border-gray-200 divide-y divide-gray-200">
-                                    <thead class="bg-gray-50">
+                                <table class="w-full divide-y divide-gray-200">
+                                    <thead class="bg-red-700">
                                     <tr>
-                                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                            Tallarines o
-                                            Spaguettis
+                                        <th class="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider rounded-tl-2xl">
+                                            Tallarines o Spaguettis
                                         </th>
-                                        <th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                            1 kg = 6
-                                            porciones
+                                        <th class="px-6 py-3 text-right text-xs font-medium text-white uppercase tracking-wider rounded-tr-2xl">
+                                            1 kg = 6 porciones
                                         </th>
                                     </tr>
                                     </thead>
@@ -120,42 +117,36 @@ import {designwork} from "../../data/designwork.json";
                         <div
                                 class="relative overflow-hidden duration-700 max-h-0 transition-all"
                                 style=""
-                                x-bind:style="selected == 2 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''"
-                                x-ref="container1"
+                                x-bind:style="selected == 2 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''"
+                                x-ref="container2"
                         >
                             <div class="text-sm text-zinc-500 p-4 pt-0">
                                 <div class="items-center justify-center w-full flex flex-col shrink-0 snap-start"
                                      role="option" x-bind="disableNextAndPreviousButtons">
                                     <img src="/fideos.png" alt=""
-                                         style="border-top-left-radius: 8px; border-top-right-radius: 8px; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;"/>
+                                         style="border-top-left-radius: 18px; border-top-right-radius: 18px; border-bottom-left-radius: 18px; border-bottom-right-radius: 18px;"/>
                                 </div>
                                 <br>
 
-                                <table class="w-full border border-gray-200 divide-y divide-gray-200">
-                                    <thead class="bg-gray-50">
+                                <table class="w-full divide-y divide-gray-200">
+                                    <thead class="bg-red-700">
                                     <tr>
-                                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                            Tallarines o
-                                            Spaguettis
+                                        <th class="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider rounded-tl-2xl">
+                                            Ñoquis
                                         </th>
-                                        <th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                            1 kg = 6
-                                            porciones
+                                        <th class="px-6 py-3 text-right text-xs font-medium text-white uppercase tracking-wider rounded-tr-2xl">
+                                            1 kg = 3 porciones
                                         </th>
                                     </tr>
                                     </thead>
                                     <tbody class="divide-y divide-gray-200">
                                     <tr>
-                                        <td class="px-6 py-4">Fideos al Huevo</td>
-                                        <td class="px-6 py-4 text-right">$6000</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="px-6 py-4">Fideos de Espinaca</td>
+                                        <td class="px-6 py-4">Ñoquis de papa</td>
                                         <td class="px-6 py-4 text-right">$7000</td>
                                     </tr>
                                     <tr>
-                                        <td class="px-6 py-4">Fideos de Morrón</td>
-                                        <td class="px-6 py-4 text-right">$7000</td>
+                                        <td class="px-6 py-4">Ñoquis de espinaca</td>
+                                        <td class="px-6 py-4 text-right">$7500</td>
                                     </tr>
                                     </tbody>
                                 </table>
@@ -163,6 +154,8 @@ import {designwork} from "../../data/designwork.json";
                             </div>
                         </div>
                     </li>
+
+
                     <li class="relative">
                         <button
                                 class="w-full p-4 text-left"
@@ -192,49 +185,63 @@ import {designwork} from "../../data/designwork.json";
                         <div
                                 class="relative overflow-hidden duration-700 max-h-0 transition-all"
                                 style=""
-                                x-bind:style="selected == 3 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''"
-                                x-ref="container1"
+                                x-bind:style="selected == 3 ? 'max-height: ' + $refs.container3.scrollHeight + 'px' : ''"
+                                x-ref="container3"
                         >
                             <div class="text-sm text-zinc-500 p-4 pt-0">
                                 <div class="items-center justify-center w-full flex flex-col shrink-0 snap-start"
                                      role="option" x-bind="disableNextAndPreviousButtons">
                                     <img src="/fideos.png" alt=""
-                                         style="border-top-left-radius: 8px; border-top-right-radius: 8px; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;"/>
+                                         style="border-top-left-radius: 18px; border-top-right-radius: 18px; border-bottom-left-radius: 18px; border-bottom-right-radius: 18px;"/>
                                 </div>
                                 <br>
 
-                                <table class="w-full border border-gray-200 divide-y divide-gray-200">
-                                    <thead class="bg-gray-50">
+                                <table class="w-full divide-y divide-gray-200">
+                                    <thead class="bg-red-700">
                                     <tr>
-                                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                            Tallarines o
-                                            Spaguettis
+                                        <th class="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider rounded-tl-2xl">
+                                            Ravioles
                                         </th>
-                                        <th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                            1 kg = 6
-                                            porciones
+                                        <th class="px-6 py-3 text-right text-xs font-medium text-white uppercase tracking-wider rounded-tr-2xl">
+                                            1 caja (2 planchas) = 3 porciones
                                         </th>
                                     </tr>
                                     </thead>
                                     <tbody class="divide-y divide-gray-200">
                                     <tr>
-                                        <td class="px-6 py-4">Fideos al Huevo</td>
-                                        <td class="px-6 py-4 text-right">$6000</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="px-6 py-4">Fideos de Espinaca</td>
+                                        <td class="px-6 py-4">Verdura y carne</td>
                                         <td class="px-6 py-4 text-right">$7000</td>
                                     </tr>
                                     <tr>
-                                        <td class="px-6 py-4">Fideos de Morrón</td>
+                                        <td class="px-6 py-4">Verdura y ricota</td>
                                         <td class="px-6 py-4 text-right">$7000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-6 py-4">Verdura y pollo</td>
+                                        <td class="px-6 py-4 text-right">$7500</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-6 py-4">Pollo y queso</td>
+                                        <td class="px-6 py-4 text-right">$7000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-6 py-4">Ricota y queso</td>
+                                        <td class="px-6 py-4 text-right">$7000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-6 py-4">Ricota y queso de cabra</td>
+                                        <td class="px-6 py-4 text-right">$7000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-6 py-4">Ricota, queso y jamón</td>
+                                        <td class="px-6 py-4 text-right">$7500</td>
                                     </tr>
                                     </tbody>
                                 </table>
-
                             </div>
                         </div>
                     </li>
+
                     <li class="relative">
                         <button
                                 class="w-full p-4 text-left"
@@ -264,53 +271,57 @@ import {designwork} from "../../data/designwork.json";
                         <div
                                 class="relative overflow-hidden duration-700 max-h-0 transition-all"
                                 style=""
-                                x-bind:style="selected == 4 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''"
-                                x-ref="container1"
+                                x-bind:style="selected == 4 ? 'max-height: ' + $refs.container4.scrollHeight + 'px' : ''"
+                                x-ref="container4"
                         >
                             <div class="text-sm text-zinc-500 p-4 pt-0">
                                 <div class="items-center justify-center w-full flex flex-col shrink-0 snap-start"
                                      role="option" x-bind="disableNextAndPreviousButtons">
                                     <img src="/fideos.png" alt=""
-                                         style="border-top-left-radius: 8px; border-top-right-radius: 8px; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;"/>
+                                         style="border-top-left-radius: 18px; border-top-right-radius: 18px; border-bottom-left-radius: 18px; border-bottom-right-radius: 18px;"/>
                                 </div>
                                 <br>
 
-                                <table class="w-full border border-gray-200 divide-y divide-gray-200">
-                                    <thead class="bg-gray-50">
+                                <table class="w-full divide-y divide-gray-200">
+                                    <thead class="bg-red-700">
                                     <tr>
-                                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                            Tallarines o
-                                            Spaguettis
+                                        <th class="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider rounded-tl-2xl">
+                                            Canelones
                                         </th>
-                                        <th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                            1 kg = 6
-                                            porciones
+                                        <th class="px-6 py-3 text-right text-xs font-medium text-white uppercase tracking-wider rounded-tr-2xl">
+                                            1 kg = 3 porciones
                                         </th>
                                     </tr>
                                     </thead>
                                     <tbody class="divide-y divide-gray-200">
                                     <tr>
-                                        <td class="px-6 py-4">Fideos al Huevo</td>
-                                        <td class="px-6 py-4 text-right">$6000</td>
+                                        <td class="px-6 py-4">Choclo y queso</td>
+                                        <td class="px-6 py-4 text-right">$12000</td>
                                     </tr>
                                     <tr>
-                                        <td class="px-6 py-4">Fideos de Espinaca</td>
-                                        <td class="px-6 py-4 text-right">$7000</td>
+                                        <td class="px-6 py-4">Choclo y queso de cabra</td>
+                                        <td class="px-6 py-4 text-right">$12000</td>
                                     </tr>
                                     <tr>
-                                        <td class="px-6 py-4">Fideos de Morrón</td>
-                                        <td class="px-6 py-4 text-right">$7000</td>
+                                        <td class="px-6 py-4">Verdura y carne
+                                        </td>
+                                        <td class="px-6 py-4 text-right">$12000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-6 py-4">Verdura y ricota</td>
+                                        <td class="px-6 py-4 text-right">$12000</td>
                                     </tr>
                                     </tbody>
                                 </table>
-
                             </div>
                         </div>
                     </li>
+
+
                     <li class="relative">
                         <button
                                 class="w-full p-4 text-left"
-                                @click="selected !== 4 ? selected = 4 : selected = null"
+                                @click="selected !== 5 ? selected = 5 : selected = null"
                                 type="button"
                         >
                             <div class="items-center flex justify-between text-black">
@@ -336,121 +347,44 @@ import {designwork} from "../../data/designwork.json";
                         <div
                                 class="relative overflow-hidden duration-700 max-h-0 transition-all"
                                 style=""
-                                x-bind:style="selected == 5 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''"
-                                x-ref="container1"
+                                x-bind:style="selected == 5 ? 'max-height: ' + $refs.container5.scrollHeight + 'px' : ''"
+                                x-ref="container5"
                         >
                             <div class="text-sm text-zinc-500 p-4 pt-0">
                                 <div class="items-center justify-center w-full flex flex-col shrink-0 snap-start"
                                      role="option" x-bind="disableNextAndPreviousButtons">
                                     <img src="/fideos.png" alt=""
-                                         style="border-top-left-radius: 8px; border-top-right-radius: 8px; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;"/>
+                                         style="border-top-left-radius: 18px; border-top-right-radius: 18px; border-bottom-left-radius: 18px; border-bottom-right-radius: 18px;"/>
                                 </div>
                                 <br>
 
-                                <table class="w-full border border-gray-200 divide-y divide-gray-200">
-                                    <thead class="bg-gray-50">
+                                <table class="w-full divide-y divide-gray-200">
+                                    <thead class="bg-red-700">
                                     <tr>
-                                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                            Tallarines o
-                                            Spaguettis
+                                        <th class="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider rounded-tl-2xl">
+                                           Raviolón
                                         </th>
-                                        <th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                            1 kg = 6
-                                            porciones
+                                        <th class="px-6 py-3 text-right text-xs font-medium text-white uppercase tracking-wider rounded-tr-2xl">
+                                            1 kg = 3 porciones
                                         </th>
                                     </tr>
                                     </thead>
                                     <tbody class="divide-y divide-gray-200">
                                     <tr>
-                                        <td class="px-6 py-4">Fideos al Huevo</td>
-                                        <td class="px-6 py-4 text-right">$6000</td>
+                                        <td class="px-6 py-4">Verdura y carne</td>
+                                        <td class="px-6 py-4 text-right">$12000</td>
                                     </tr>
                                     <tr>
-                                        <td class="px-6 py-4">Fideos de Espinaca</td>
-                                        <td class="px-6 py-4 text-right">$7000</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="px-6 py-4">Fideos de Morrón</td>
-                                        <td class="px-6 py-4 text-right">$7000</td>
+                                        <td class="px-6 py-4">Verdura y ricota
+                                        </td>
+                                        <td class="px-6 py-4 text-right">$12000</td>
                                     </tr>
                                     </tbody>
                                 </table>
-
                             </div>
                         </div>
                     </li>
-                    <li class="relative">
-                        <button
-                                class="w-full p-4 text-left"
-                                @click="selected !== 6 ? selected = 7 : selected = null"
-                                type="button"
-                        >
-                            <div class="items-center flex justify-between text-black">
-                                <p class="text-lg tracking-tight text-black">
-                                    Lasagna
-                                </p>
-                                <svg
-                                        class="ml-4 duration-200 h-5 inline rotate-180 transform transition-transform w-5"
-                                        fill="currentColor"
-                                        viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        :class="{'rotate-180': open, 'rotate-0': !open}"
-                                >
-                                    <path
-                                            d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
-                                            clip-rule="evenodd"
-                                            fill-rule="evenodd"></path>
-                                </svg
-                                >
-                            </div>
-                        </button
-                        >
-                        <div
-                                class="relative overflow-hidden duration-700 max-h-0 transition-all"
-                                style=""
-                                x-bind:style="selected == 6 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''"
-                                x-ref="container1"
-                        >
-                            <div class="text-sm text-zinc-500 p-4 pt-0">
-                                <div class="items-center justify-center w-full flex flex-col shrink-0 snap-start"
-                                     role="option" x-bind="disableNextAndPreviousButtons">
-                                    <img src="/fideos.png" alt=""
-                                         style="border-top-left-radius: 8px; border-top-right-radius: 8px; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;"/>
-                                </div>
-                                <br>
 
-                                <table class="w-full border border-gray-200 divide-y divide-gray-200">
-                                    <thead class="bg-gray-50">
-                                    <tr>
-                                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                            Tallarines o
-                                            Spaguettis
-                                        </th>
-                                        <th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                            1 kg = 6
-                                            porciones
-                                        </th>
-                                    </tr>
-                                    </thead>
-                                    <tbody class="divide-y divide-gray-200">
-                                    <tr>
-                                        <td class="px-6 py-4">Fideos al Huevo</td>
-                                        <td class="px-6 py-4 text-right">$6000</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="px-6 py-4">Fideos de Espinaca</td>
-                                        <td class="px-6 py-4 text-right">$7000</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="px-6 py-4">Fideos de Morrón</td>
-                                        <td class="px-6 py-4 text-right">$7000</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-
-                            </div>
-                        </div>
-                    </li>
 
                     <li class="relative">
                         <button
@@ -481,49 +415,43 @@ import {designwork} from "../../data/designwork.json";
                         <div
                                 class="relative overflow-hidden duration-700 max-h-0 transition-all"
                                 style=""
-                                x-bind:style="selected == 6 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''"
-                                x-ref="container1"
+                                x-bind:style="selected == 6 ? 'max-height: ' + $refs.container6.scrollHeight + 'px' : ''"
+                                x-ref="container6"
                         >
                             <div class="text-sm text-zinc-500 p-4 pt-0">
                                 <div class="items-center justify-center w-full flex flex-col shrink-0 snap-start"
                                      role="option" x-bind="disableNextAndPreviousButtons">
                                     <img src="/fideos.png" alt=""
-                                         style="border-top-left-radius: 8px; border-top-right-radius: 8px; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;"/>
+                                         style="border-top-left-radius: 18px; border-top-right-radius: 18px; border-bottom-left-radius: 18px; border-bottom-right-radius: 18px;"/>
                                 </div>
                                 <br>
 
-                                <table class="w-full border border-gray-200 divide-y divide-gray-200">
-                                    <thead class="bg-gray-50">
+                                <table class="w-full divide-y divide-gray-200">
+                                    <thead class="bg-red-700">
                                     <tr>
-                                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                            Tallarines o
-                                            Spaguettis
+                                        <th class="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider rounded-tl-2xl">
+                                            Lasagna
                                         </th>
-                                        <th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                            1 kg = 6
-                                            porciones
+                                        <th class="px-6 py-3 text-right text-xs font-medium text-white uppercase tracking-wider rounded-tr-2xl">
+                                            1 kg = 4 porciones
                                         </th>
                                     </tr>
                                     </thead>
                                     <tbody class="divide-y divide-gray-200">
                                     <tr>
-                                        <td class="px-6 py-4">Fideos al Huevo</td>
-                                        <td class="px-6 py-4 text-right">$6000</td>
+                                        <td class="px-6 py-4">Ricota, jamón y queso</td>
+                                        <td class="px-6 py-4 text-right">$15000</td>
                                     </tr>
                                     <tr>
-                                        <td class="px-6 py-4">Fideos de Espinaca</td>
-                                        <td class="px-6 py-4 text-right">$7000</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="px-6 py-4">Fideos de Morrón</td>
-                                        <td class="px-6 py-4 text-right">$7000</td>
+                                        <td class="px-6 py-4">Ricota y queso</td>
+                                        <td class="px-6 py-4 text-right">$15000</td>
                                     </tr>
                                     </tbody>
                                 </table>
-
                             </div>
                         </div>
                     </li>
+
 
                     <li class="relative">
                         <button
@@ -554,49 +482,43 @@ import {designwork} from "../../data/designwork.json";
                         <div
                                 class="relative overflow-hidden duration-700 max-h-0 transition-all"
                                 style=""
-                                x-bind:style="selected == 7 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''"
-                                x-ref="container1"
+                                x-bind:style="selected == 7 ? 'max-height: ' + $refs.container7.scrollHeight + 'px' : ''"
+                                x-ref="container7"
                         >
                             <div class="text-sm text-zinc-500 p-4 pt-0">
                                 <div class="items-center justify-center w-full flex flex-col shrink-0 snap-start"
                                      role="option" x-bind="disableNextAndPreviousButtons">
                                     <img src="/fideos.png" alt=""
-                                         style="border-top-left-radius: 8px; border-top-right-radius: 8px; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;"/>
+                                         style="border-top-left-radius: 18px; border-top-right-radius: 18px; border-bottom-left-radius: 18px; border-bottom-right-radius: 18px;"/>
                                 </div>
                                 <br>
 
-                                <table class="w-full border border-gray-200 divide-y divide-gray-200">
-                                    <thead class="bg-gray-50">
+                                <table class="w-full divide-y divide-gray-200">
+                                    <thead class="bg-red-700">
                                     <tr>
-                                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                            Tallarines o
-                                            Spaguettis
+                                        <th class="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider rounded-tl-2xl">
+                                            Panzottis
                                         </th>
-                                        <th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                            1 kg = 6
-                                            porciones
+                                        <th class="px-6 py-3 text-right text-xs font-medium text-white uppercase tracking-wider rounded-tr-2xl">
+                                            1 kg = 4 porciones
                                         </th>
                                     </tr>
                                     </thead>
                                     <tbody class="divide-y divide-gray-200">
                                     <tr>
-                                        <td class="px-6 py-4">Fideos al Huevo</td>
-                                        <td class="px-6 py-4 text-right">$6000</td>
+                                        <td class="px-6 py-4">Espinaca y queso</td>
+                                        <td class="px-6 py-4 text-right">$15000</td>
                                     </tr>
                                     <tr>
-                                        <td class="px-6 py-4">Fideos de Espinaca</td>
-                                        <td class="px-6 py-4 text-right">$7000</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="px-6 py-4">Fideos de Morrón</td>
-                                        <td class="px-6 py-4 text-right">$7000</td>
+                                        <td class="px-6 py-4">Espinaca y carne</td>
+                                        <td class="px-6 py-4 text-right">$15000</td>
                                     </tr>
                                     </tbody>
                                 </table>
-
                             </div>
                         </div>
                     </li>
+
 
                     <li class="relative">
                         <button
@@ -627,49 +549,39 @@ import {designwork} from "../../data/designwork.json";
                         <div
                                 class="relative overflow-hidden duration-700 max-h-0 transition-all"
                                 style=""
-                                x-bind:style="selected == 8 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''"
-                                x-ref="container1"
+                                x-bind:style="selected == 8 ? 'max-height: ' + $refs.container8.scrollHeight + 'px' : ''"
+                                x-ref="container8"
                         >
                             <div class="text-sm text-zinc-500 p-4 pt-0">
                                 <div class="items-center justify-center w-full flex flex-col shrink-0 snap-start"
                                      role="option" x-bind="disableNextAndPreviousButtons">
                                     <img src="/fideos.png" alt=""
-                                         style="border-top-left-radius: 8px; border-top-right-radius: 8px; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;"/>
+                                         style="border-top-left-radius: 18px; border-top-right-radius: 18px; border-bottom-left-radius: 18px; border-bottom-right-radius: 18px;"/>
                                 </div>
                                 <br>
 
-                                <table class="w-full border border-gray-200 divide-y divide-gray-200">
-                                    <thead class="bg-gray-50">
+                                <table class="w-full divide-y divide-gray-200">
+                                    <thead class="bg-red-700">
                                     <tr>
-                                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                            Tallarines o
-                                            Spaguettis
+                                        <th class="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider rounded-tl-2xl">
+                                            Capresse
                                         </th>
-                                        <th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                            1 kg = 6
-                                            porciones
+                                        <th class="px-6 py-3 text-right text-xs font-medium text-white uppercase tracking-wider rounded-tr-2xl">
+                                            1 kg = 4 porciones
                                         </th>
                                     </tr>
                                     </thead>
                                     <tbody class="divide-y divide-gray-200">
                                     <tr>
-                                        <td class="px-6 py-4">Fideos al Huevo</td>
-                                        <td class="px-6 py-4 text-right">$6000</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="px-6 py-4">Fideos de Espinaca</td>
-                                        <td class="px-6 py-4 text-right">$7000</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="px-6 py-4">Fideos de Morrón</td>
-                                        <td class="px-6 py-4 text-right">$7000</td>
+                                        <td class="px-6 py-4">Queso mozzarella, queso pategras, queso cuartirolo, tomate y albahaca</td>
+                                        <td class="px-6 py-4 text-right">$18000</td>
                                     </tr>
                                     </tbody>
                                 </table>
-
                             </div>
                         </div>
                     </li>
+
 
                     <li class="relative">
                         <button
@@ -680,6 +592,7 @@ import {designwork} from "../../data/designwork.json";
                             <div class="items-center flex justify-between text-black">
                                 <p class="text-lg tracking-tight text-black">
                                     Agnolottis
+
                                 </p>
                                 <svg
                                         class="ml-4 duration-200 h-5 inline rotate-180 transform transition-transform w-5"
@@ -700,51 +613,42 @@ import {designwork} from "../../data/designwork.json";
                         <div
                                 class="relative overflow-hidden duration-700 max-h-0 transition-all"
                                 style=""
-                                x-bind:style="selected == 9 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''"
-                                x-ref="container1"
+                                x-bind:style="selected == 9 ? 'max-height: ' + $refs.container9.scrollHeight + 'px' : ''"
+                                x-ref="container9"
                         >
                             <div class="text-sm text-zinc-500 p-4 pt-0">
                                 <div class="items-center justify-center w-full flex flex-col shrink-0 snap-start"
                                      role="option" x-bind="disableNextAndPreviousButtons">
                                     <img src="/fideos.png" alt=""
-                                         style="border-top-left-radius: 8px; border-top-right-radius: 8px; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;"/>
+                                         style="border-top-left-radius: 18px; border-top-right-radius: 18px; border-bottom-left-radius: 18px; border-bottom-right-radius: 18px;"/>
                                 </div>
                                 <br>
 
-                                <table class="w-full border border-gray-200 divide-y divide-gray-200">
-                                    <thead class="bg-gray-50">
+                                <table class="w-full divide-y divide-gray-200">
+                                    <thead class="bg-red-700">
                                     <tr>
-                                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                            Tallarines o
-                                            Spaguettis
+                                        <th class="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider rounded-tl-2xl">
+                                            Agnolottis
                                         </th>
-                                        <th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                            1 kg = 6
-                                            porciones
+                                        <th class="px-6 py-3 text-right text-xs font-medium text-white uppercase tracking-wider rounded-tr-2xl">
+                                            1 kg = 4 porciones
                                         </th>
                                     </tr>
                                     </thead>
                                     <tbody class="divide-y divide-gray-200">
                                     <tr>
-                                        <td class="px-6 py-4">Fideos al Huevo</td>
-                                        <td class="px-6 py-4 text-right">$6000</td>
+                                        <td class="px-6 py-4">Zapallo y queso</td>
+                                        <td class="px-6 py-4 text-right">$14000</td>
                                     </tr>
                                     <tr>
-                                        <td class="px-6 py-4">Fideos de Espinaca</td>
-                                        <td class="px-6 py-4 text-right">$7000</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="px-6 py-4">Fideos de Morrón</td>
-                                        <td class="px-6 py-4 text-right">$7000</td>
+                                        <td class="px-6 py-4">Zapallo y queso de cabra</td>
+                                        <td class="px-6 py-4 text-right">$14000</td>
                                     </tr>
                                     </tbody>
                                 </table>
-
                             </div>
                         </div>
                     </li>
-
-
                 </ul>
             </div>
         </div>
