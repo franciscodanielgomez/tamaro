@@ -14,7 +14,7 @@ module.exports = {
         "6xl": "5rem",
       },
       fontFamily: {
-        sans: ["Inter", ...defaultTheme.fontFamily.sans],
+        sans: ["Ibarra Real Nova", ...defaultTheme.fontFamily.sans],
       },
     },
   },
